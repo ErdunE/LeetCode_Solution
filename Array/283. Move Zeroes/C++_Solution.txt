@@ -1,0 +1,22 @@
+class Solution 
+{
+public:
+    void moveZeroes(vector<int>& nums) 
+    {
+        int slowpoint = 0;
+//先把非0按顺序移动到前面
+        for(int fastpoint = 0; fastpoint < nums.size(); fastpoint++)
+        {
+            if(nums[fastpoint] != 0)
+            {
+                nums[slowpoint] = nums[fastpoint];
+                slowpoint++;
+            }
+        }
+//然后覆盖后面所有数字都为0
+        for(int i = slowpoint; i < nums.size(); i++)
+        {
+            nums[i] = 0;
+        }
+    }
+};
