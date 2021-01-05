@@ -2,19 +2,19 @@
 
 实战题目 - Array
 题号 	难度 	题目名称            	            	
-11	中等	盛最多水的容器 	11. Container With Most Water		
-26	简单	删除排序数组中重复项 	26. Remove Duplicates from Sorted Array	
-66	简单	加一 	66. Plus One
-70	简单	爬楼梯 	70. Climbing Stairs
-88	简单	合并两个有序数组 	88. Merge Sorted Array	
-189	简单	旋转数组 	189. Rotate Array	
-283	简单	移动零 	283. Move Zeroes	
+11	中等	盛最多水的容器		
+26	简单	删除排序数组中重复项
+66	简单	加一
+70	简单	爬楼梯
+88	简单	合并两个有序数组	
+189	简单	旋转数组	
+283	简单	移动零
 
 实战题目 - Linked List
 题号 	难度 	题目名称            	            	
-21	中等	合并两个有序链表 	21. Merge Two Sorted Lists	
-24	中等	两两交换链表中的节点 	24. Swap Nodes in Pairs	
-25	困难	K 个一组翻转链表 	25. Reverse Nodes in k-Group	
+21	中等	合并两个有序链表 	
+24	中等	两两交换链表中的节点	
+25	困难	K 个一组翻转链表	
 141	简单	环形链表	
 142	中等	环形链表II	
 206	简单	反转链表	
