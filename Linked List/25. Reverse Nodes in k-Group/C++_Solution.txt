@@ -1,0 +1,61 @@
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode() : val(0), next(nullptr) {}
+ *     ListNode(int x) : val(x), next(nullptr) {}
+ *     ListNode(int x, ListNode *next) : val(x), next(next) {}
+ * };
+ */
+class Solution 
+{
+public:
+    ListNode* reverseKGroup(ListNode* head, int k) 
+    {
+        ListNode* dummyhead = new ListNode(-1);
+        dummyhead->next = head;
+        ListNode* starts = head;
+        ListNode* ends = head;
+        ListNode* pre = dummyhead;
+        ListNode* nexts,*cur;
+        
+        while(1)
+        {
+            
+            //ends指向打头的位置，如果移动k-1次(后面的k个指针都不为空)，则进行翻转
+            for(int i=0; i<k-1 ; i++ )
+            {
+                if(ends == NULL)
+                {
+                    break;
+                }
+                ends = ends->next; 
+            }
+            if(ends == NULL)
+            {
+                break;
+            }
+            nexts = ends->next;
+            for(int i=0; i<k-1; i++)
+            {
+                cur = starts;
+                starts = starts->next;
+                //cur指针与starts指针每次往后走一步，指到需要翻转的节点
+                pre->next = starts;
+                cur->next = ends->next;
+                ends->next = cur;
+            }
+            starts = nexts;
+            ends = nexts;
+            //翻转完之后pre往后走k步指向新的头节点
+            
+            for(int i=0; i<k;i++)
+            {
+                pre=pre->next;
+            }
+        }
+        return dummyhead->next;
+        
+    }
+};
