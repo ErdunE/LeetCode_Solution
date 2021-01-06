@@ -1,0 +1,25 @@
+class Solution {
+public:
+    int maxArea(vector<int>& height) {
+
+        int n = height.size(); //n的个数
+        int l = 0; //左指针
+        int r = n-1; //右指针
+        int res = 0; //最大容积
+        while(l < r) 
+        {
+            int area = (r - l) * min(height[l],height[r]); // 计算每一次容积
+            res = max(res,area); //记录最大容积
+            if(height[l]<height[r]) //哪边小哪边移动
+            {
+                l++;
+            }
+            else
+            {
+                r--;
+            }
+        }
+        return res;
+
+    }
+};
