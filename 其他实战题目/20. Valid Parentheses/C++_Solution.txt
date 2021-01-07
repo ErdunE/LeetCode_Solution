@@ -1,0 +1,34 @@
+class Solution {
+public:
+    bool isValid(string s) {
+        
+        stack<char>compare_set;//创建一个栈
+        
+        for(int i = 0 ; i != s.size(); i++)
+        {
+            if(compare_set.empty() || s[i] == '(' || s[i] == '['|| s[i] == '{')
+            {
+                compare_set.push(s[i]);//将括号左半部分push进栈里
+            }
+            else if(compare_set.top()=='(' && s[i] == ')')
+            {
+                compare_set.pop();//检查最顶端是不是匹配的括号，如果是删掉最上面的
+            }
+            else if(compare_set.top()=='[' && s[i] == ']')
+            {
+                compare_set.pop();//同上
+            }
+            else if(compare_set.top()=='{' && s[i] == '}')
+            {
+                compare_set.pop();//同上
+            }
+            else
+            {
+                return false;//其他情况，返回false
+            }
+            
+        }
+        return compare_set.empty(); 
+        
+    }
+};
