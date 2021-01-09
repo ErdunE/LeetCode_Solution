@@ -1,0 +1,52 @@
+class Solution 
+{
+public:
+    vector<int> maxSlidingWindow(vector<int>& nums, int k) 
+    {
+        if(nums.empty() || k > nums.size() || k<=0) 
+        {
+            return {};
+        }
+        //如果空集或者 k大于集合的数量 或者k小于等于0 直接返回
+        
+        vector<int> res;
+        deque<int> findMax;
+        
+        for(int i = 0; i < nums.size(); ++i)
+        //i每增加一次 代表滑动窗口向右移动一次； i指向的是滑动窗口的尾部数字 即 从i=k-1开始
+        {
+            if(i>=k && !findMax.empty())
+            {
+                res.push_back(nums[findMax.front()]);
+                /*  i >= k 是为了确保 findMax.front() 
+                    至少为第一个完整的滑动窗口的最大值
+                    即至少形成了一个完整的滑动窗口。    */
+
+            }
+            
+            while(!findMax.empty() && nums[i] >= nums[findMax.back()])
+            {
+                findMax.pop_back();
+                /*  如果新进来的 nums[i] 大于等于滑动窗口的尾部元素，
+                    说明该尾部元素肯定不会是任何滑动窗口的最大元素。
+                    就想象公司新来了一个既比你年轻又比你能干（大于等于你）的人，那你就只能被淘汰了，
+                    而且是循环淘汰掉所有不如新员工的老员工 */
+            }
+            
+            if(!findMax.empty() && i - findMax.front() >= k)
+            {
+                findMax.pop_front();
+                /*  虽然 findMax 的头部是最大的元素的索引，
+                    但是如果当前滑动窗口已不包括该索引，那么需要弹出该索引。
+                    就想象即使是公司的骨干成员，但是过了35岁也要被淘汰。 */
+            }
+            
+            findMax.push_back(i);
+        }
+        
+        res.push_back(nums[findMax.front()]);
+        // 最后一个滑动窗口还没计算就退出了 for 循环，需补上。
+        
+        return res;
+    }
+};
