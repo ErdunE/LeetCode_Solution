@@ -1,0 +1,44 @@
+class MinStack 
+{
+public:
+    /** initialize your data structure here. */
+    
+    stack<int> x_stack; //正常的放入的栈
+    stack<int> min_stack;//与前一个比较 然后将最小值放入这个栈
+    
+    MinStack() 
+    {
+        min_stack.push(INT_MAX); //预先在 min_stack中加入一个虚拟占位值
+    }
+    
+    void push(int x) 
+    {
+        x_stack.push(x); 
+        min_stack.push(min(min_stack.top(),x));   //比较min_stack的top 和 x 较小的一个push进 min_stack中
+    }
+    
+    void pop() 
+    {
+        x_stack.pop();
+        min_stack.pop();        
+    }
+    
+    int top() 
+    {
+        return x_stack.top(); //最顶值 是x_stack.top的最顶值
+    }
+    
+    int getMin() 
+    {
+        return min_stack.top(); //最小值 是min_stack.top的最顶值
+    }
+};
+
+/**
+ * Your MinStack object will be instantiated and called as such:
+ * MinStack* obj = new MinStack();
+ * obj->push(x);
+ * obj->pop();
+ * int param_3 = obj->top();
+ * int param_4 = obj->getMin();
+ */
