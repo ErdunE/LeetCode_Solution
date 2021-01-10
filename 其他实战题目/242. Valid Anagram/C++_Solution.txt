@@ -1,0 +1,12 @@
+class Solution 
+{
+public:
+    bool isAnagram(string s, string t) 
+    {
+        if(s.size() != t.size()) return false; //如果两个字符串 数量不相等 直接返回false
+        
+        sort(s.begin(),s.end());  //将 s和t 进行排序
+        sort(t.begin(),t.end());
+        return s==t; 
+    }
+};
