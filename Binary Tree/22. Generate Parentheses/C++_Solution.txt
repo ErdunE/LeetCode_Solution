@@ -1,0 +1,26 @@
+class Solution 
+{
+public:
+    void getAns(string str, int l, int r, vector<string>& ans)
+    {
+        if( l == 0 && r == 0)
+        {
+            ans.push_back(str);
+        }
+        if(l > 0)
+        {
+            getAns(str + '(' , l - 1 , r + 1, ans);
+        }
+        if(r > 0)
+        {
+            getAns(str + ')', l , r - 1 , ans);
+        }
+    }
+    
+    vector<string> generateParenthesis(int n) 
+    {
+        vector<string> ans;
+        getAns("" , n, 0, ans);
+        return ans;        
+    }
+};
