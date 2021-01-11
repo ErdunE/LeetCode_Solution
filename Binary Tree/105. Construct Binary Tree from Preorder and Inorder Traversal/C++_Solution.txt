@@ -1,0 +1,62 @@
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+ * };
+ */
+class Solution 
+{
+public:
+    TreeNode* buildTree(vector<int>& preorder, vector<int>& inorder) 
+    {
+        int m = preorder.size();
+        if(m == 0)
+        {
+            return NULL;
+        }
+        
+        TreeNode* root = new TreeNode(preorder[0]);
+        vector<int> preorder_left, preorder_right, inorder_left, inorder_right;
+        //在inorder里面寻找根节点，以便寻找左子树和右子树
+        int i;
+        
+        //构造左子树的中序遍历
+        for(i = 0; i<m ; i++)
+        {
+            if(inorder[i] == preorder[0]) //前序第一个数是该二分树的根 所以先在中序中寻找根
+            {
+                break;
+            }
+            inorder_left.push_back(inorder[i]);
+        }
+        
+        //构造右子树的中序遍历
+        for(i = i + 1 ; i<m ; i++)
+        {
+            inorder_right.push_back(inorder[i]);
+        }
+        
+        for(int j = 1 ; j < m ; j++)
+        {
+            //构造左子树的前序遍历
+            if(j <= inorder_left.size())
+            {
+                preorder_left.push_back(preorder[j]);
+            }
+            else //构造右子树的前序遍历
+            {
+                preorder_right.push_back(preorder[j]);
+            }
+        }
+        
+        root -> left = buildTree(preorder_left, inorder_left);
+        root -> right = buildTree(preorder_right, inorder_right);
+        return root;
+        
+    }
+};
