@@ -1,0 +1,47 @@
+class Solution 
+{
+public:
+    int minMutation(string start, string end, vector<string>& bank) 
+    {
+        unordered_set<string> set(bank.begin() , bank.end());
+        unordered_set<string> vis;
+        vector<char> char_vec({'A' , 'C' , 'G' , 'T'});
+        queue<string> que;
+        que.push(start);
+        int step = 1;
+        
+        while(!que.empty())
+        {
+            int size = que.size();
+            for(int i=0 ; i<size ; i++)
+            {
+                string word = que.front();
+                que.pop();
+                if(word == end)
+                {
+                    return step-1;
+                }
+                if(vis.count(word))
+                {
+                    continue;
+                }
+                vis.insert(word);
+                for(int j=0 ; j<word.length() ;j++)
+                {
+                    char c = word[j];
+                    for(int k=0 ; k<char_vec.size() ; k++)
+                    {
+                        word[j] = char_vec[k];
+                        if(set.count(word)&&vis.count(word)==0)
+                        {
+                            que.push(word);
+                        }                 
+                    }
+                    word[j] = c;
+                }
+            }
+            step++;
+        }
+        return -1;
+    }
+};
