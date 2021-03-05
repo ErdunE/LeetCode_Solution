@@ -1,0 +1,27 @@
+class Solution {
+public:
+    int maxProfit(vector<int>& prices, int fee) 
+    {
+        if(prices.size()<2)
+        {
+            return 0;
+        }
+        
+        int ans = 0;
+        int in_hand = prices[0];
+        
+        for(int i=1 ; i<prices.size() ; i++)
+        {
+            if(prices[i]<in_hand)
+            {
+                in_hand = prices[i];
+            }
+            else if(prices[i]-fee > in_hand )
+            {
+                ans += (prices[i] - fee) - in_hand;
+                in_hand = prices[i] - fee;
+            }
+        }
+        return ans;
+    }
+};
