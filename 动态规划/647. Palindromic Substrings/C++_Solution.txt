@@ -1,0 +1,24 @@
+class Solution 
+{
+public:
+    int countSubstrings(string s) 
+    {
+        int n = s.size();
+        int result = 0;
+        for(int i = 0; i<n ; ++i)
+        {
+            int l=i, r=i;
+            while(0<=l && r<n && s[l--]==s[r++]) //以单字母为中心
+            {
+                ++result;
+            }
+            l=i, r=i+1;
+            while(0<=l && r<n && s[l--]==s[r++]) //以双字母为中心
+            {
+                ++result;
+            }
+        }
+        
+        return result;
+    }
+};
