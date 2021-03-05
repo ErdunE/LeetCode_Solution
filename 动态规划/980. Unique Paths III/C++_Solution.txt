@@ -1,0 +1,60 @@
+class Solution 
+{
+public:
+    int uniquePathsIII(vector<vector<int>>& grid) 
+    {
+        int path_count = 0; //记录满足的路径的数量
+        int zero_count = 0; //记录0的个数，由于最开始从1开始，而我们也会在深搜时将其赋值为-1，所以可以看做它和0的地位几乎一样
+        int x, y;
+        for(int i=0; i<grid.size(); ++i)
+        {
+            for(int j=0 ; j<grid[i].size() ; ++j)
+            {
+                if(grid[i][j]==1)
+                {
+                    x = i;
+                    y = j;
+                    zero_count++; //由于上面的解释，所以我们在这里也应该把zero_count++
+                }
+                if(grid[i][j]==0)
+                {
+                    zero_count++;
+                }
+            }
+        }
+        dfs_move(x,y,zero_count,path_count,grid); //深度优先搜索
+        return path_count;  
+    }
+
+private:
+    void dfs_move(int i, int j, int zero_count, int &path_count, vector<vector<int>> &grid)
+    {
+        if (i >= grid.size() || i < 0 || j >= grid[i].size() || j < 0) 
+        {//如果下标越界了，则返回
+            return;
+        }
+        
+        if (grid[i][j] == -1) 
+        {//如果是-1,则不能走，返回
+            return;
+        }
+        //每次深度优先搜索会将zero_count-1,当其为0时且到达终点时，才表明找到一条路，path++
+        if (grid[i][j] == 2 && zero_count != 0) 
+        {
+            return;
+        }
+        if (grid[i][j] == 2 && zero_count == 0) 
+        {
+            path_count++;
+            return;
+        }
+        int temp = grid[i][j];//记录回溯前的当前结点的镜像
+        grid[i][j] = -1;//将当前结点置为不可通行
+        //向四个方向深度优先搜索
+        dfs_move(i, j - 1, zero_count - 1, path_count, grid);
+        dfs_move(i, j + 1, zero_count - 1, path_count, grid);
+        dfs_move(i - 1, j, zero_count - 1, path_count, grid);
+        dfs_move(i + 1, j, zero_count - 1, path_count, grid);
+        grid[i][j] = temp;//还原当前结点，以便回溯
+    }   
+};
