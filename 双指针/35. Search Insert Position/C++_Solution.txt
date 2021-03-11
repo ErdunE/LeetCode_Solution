@@ -1,0 +1,37 @@
+class Solution {
+public:
+    int searchInsert(vector<int>& nums, int target) 
+    {
+        int n = nums.size();
+        if(n == 0)
+        {
+            return 0;
+        }
+        
+        if(nums[n-1]<target) // 特判
+        {
+            return n;
+        }
+        
+        int left = 0;
+        int right = n-1;
+        
+        while(left < right)
+        {
+            int mid = left + (right - left)/2;
+            // 严格小于 target 的元素一定不是解
+            if(nums[mid] < target)
+            {
+                // 下一轮搜索区间是 [mid + 1, right]
+                left = mid + 1;
+            }
+            else
+            {
+                // 下一轮搜索区间是 [left, mid] 
+                right = mid;
+            }
+        }
+        
+        return left;
+    }
+};
