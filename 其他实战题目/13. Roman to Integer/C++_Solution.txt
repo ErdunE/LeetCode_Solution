@@ -1,0 +1,32 @@
+class Solution 
+{
+public:
+    int romanToInt(string s) 
+    {
+        int res = 0;
+        map<char,int> luoma=
+        {
+            {'I', 1 },
+            {'V', 5 },
+            {'X', 10 },
+            {'L', 50 },
+            {'C', 100 },
+            {'D', 500 },
+            {'M', 1000 },
+        };//初始化哈希表
+        
+        for(int i=0 ; i<s.size() ; i++)
+        {
+            if(luoma[s[i]] < luoma[s[i+1]])
+            {
+                res -= luoma[s[i]];
+            }
+            else
+            {
+                res += luoma[s[i]];
+            }
+        }
+        
+        return res;
+    }
+};
