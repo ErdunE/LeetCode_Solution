@@ -1,0 +1,30 @@
+class Solution {
+public:
+    string longestCommonPrefix(vector<string>& strs) 
+    {
+        if(strs.empty())  //如果容器vecto为空，则返回“”
+        {
+            return "";
+        }
+        
+        string res = strs[0];  //选择第一个字符串作为对照标准
+        for(int i=1 ; i<strs.size() ; i++)
+        {
+            for(int j=0 ; j<res.length() ; j++)
+            {
+                if(res[j] == strs[i][j])
+                {
+                    continue;
+                }
+                else
+                {
+                    res.erase(j);  //找到第一个不符合的字符位置，从pos=j处开始删除直至结尾
+                    break;
+                }
+            }
+        }
+        
+        return res;
+    
+    }
+};
