@@ -1,0 +1,52 @@
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+ * };
+ */
+class Solution {
+public:
+    bool isBalanced(TreeNode* root) 
+    {
+        return checkBalance(root)>=0;
+    }
+    
+    int checkBalance(TreeNode* root)
+    {
+        if(!root) //空结点，说明到达底部，返回高度0
+        {
+            return 0;
+        }
+        
+        int Lh = checkBalance(root->left); //检查左子树高度
+        if(Lh<0) //高度是否满足，负数相当于false，继续返回
+        {
+            return Lh;
+        }
+        int Rh = checkBalance(root->right); //检查右子树高度
+        if(Rh<0)
+        {
+            return Rh; //负数为false，直接返回
+        }
+        
+        //左右子树都满足高度合法，检查当前根节点是否满足
+        if(abs(Lh-Rh)<2)
+        {
+            return max(Lh,Rh)+1; //满足，返回新的高度
+        }
+        else
+        {
+            return -1; //不满足，返回负数相当于false
+        }
+        
+    }
+};
+
+
+
+
