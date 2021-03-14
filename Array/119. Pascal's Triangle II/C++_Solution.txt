@@ -1,0 +1,17 @@
+class Solution 
+{
+public:
+    vector<int> getRow(int rowIndex) 
+    {
+        vector<int> kRow(rowIndex+1); //第K行的vector大小为 rowIndex+1
+        for(int i=0; i<rowIndex+1 ;i++) //利用前一行求后一行，第K行要循环K遍
+        {
+            kRow[i] = 1; //行末尾为1
+            for(int j = i ; j>1 ; j--) //每一行的更新过程
+            {
+                kRow[j-1] = kRow[j-2] + kRow[j-1];
+            }
+        }
+        return kRow;
+    }  
+};
