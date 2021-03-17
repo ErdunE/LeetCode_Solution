@@ -1,0 +1,30 @@
+class Solution {
+public:
+    int numSubarrayProductLessThanK(vector<int>& nums, int k) 
+    {
+        if(k<=1)//特殊边界
+        {
+            return 0;
+        }
+        int n = nums.size();
+        int count = 0; //计数
+        int start = 0; //窗口左边
+        int product = 1; 
+        for(int end = 0; end < n ; end++) //窗口右边
+        {
+            product *= nums[end];
+            
+            while(product >= k) //乘积大于k，左窗口移动1
+            {
+                product /= nums[start];
+                start++;
+            }
+            
+            count += end - start + 1;
+        }
+        
+        return count;
+        
+        
+    }
+};
