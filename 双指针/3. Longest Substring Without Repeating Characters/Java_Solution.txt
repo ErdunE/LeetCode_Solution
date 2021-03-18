@@ -1,0 +1,31 @@
+class Solution {
+    public int lengthOfLongestSubstring(String s) 
+    {
+        int n = s.length();
+        Set<Character> set = new HashSet<>();
+        
+        int i = 0;
+        int j = 0;
+        int max = 0;
+        
+        while(j<n)
+        {
+            if(!set.contains(s.charAt(j)))  // 当前滑动窗口内无重复元素，右边界j一直右移
+            {
+                set.add(s.charAt(j));
+                j++;
+            }
+            else // 遇到窗口内已有的元素，左边界i一直右移直到重复元素不在Set内
+            { 
+                while(set.contains(s.charAt(j))) 
+                {
+                    set.remove(s.charAt(i));
+                    i++;
+                }
+            }
+            max = Math.max(max,j-i);
+        }
+        return max;
+        
+    }
+}
