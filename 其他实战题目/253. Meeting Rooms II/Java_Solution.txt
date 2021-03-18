@@ -1,0 +1,37 @@
+class Solution 
+{
+    public int minMeetingRooms(int[][] intervals) 
+    {
+        if(intervals.length < 2) return intervals.length;
+        
+		//创建两个数组来存储开始时间和结束时间
+        int[] start = new int[intervals.length];
+        int[] end = new int[intervals.length];
+        int i=0;
+        for (int[] interval : intervals){
+            start[i] = interval[0];
+            end[i] = interval[1];
+            i++;
+        }
+        
+		//对两个数组进行排序
+        Arrays.sort(start);
+        Arrays.sort(end);
+        int rooms=0;
+        
+		//使用2个指针并每次递增开始指针来检查start[]中的当前项是否大于end[]中的当前项，
+		//然后有一个可用的房间，这个房间可以使用，因此我们也增加了结束指针。
+		//如果条件不为真，则添加一个新房间
+        for(int p1=0, p2=0; p1<start.length; p1++){
+            if(start[p1] < end[p2]) 
+            {
+                rooms++;
+            }
+            else 
+            {
+                p2++;
+            }
+        }
+        return rooms;
+    }
+}
