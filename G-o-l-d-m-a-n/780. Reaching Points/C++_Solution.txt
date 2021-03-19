@@ -1,0 +1,35 @@
+class Solution 
+{
+public:
+    bool reachingPoints(int sx, int sy, int tx, int ty) 
+    {
+        if(tx<sx || ty<sy)
+        {
+            return false;
+        }
+        if(tx==sx && ty==sy)
+        {
+            return true;
+        }
+        
+        if(tx>ty)
+        {
+            int d = (tx-sx)/ty;
+            if(d==0)
+            {
+                d=1;
+            }
+            return reachingPoints(sx,sy,tx-d*ty,ty);
+        }
+        else
+        {
+            int d = (ty-sy)/tx;
+            if(d==0)
+            {
+                d=1;
+            }
+            return reachingPoints(sx,sy,tx,ty-d*tx);
+        }
+        return true;
+    }
+};

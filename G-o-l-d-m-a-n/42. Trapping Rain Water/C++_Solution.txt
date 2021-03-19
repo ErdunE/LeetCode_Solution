@@ -1,0 +1,37 @@
+class Solution 
+{
+public:
+    int trap(vector<int>& height) 
+    {
+        if(height.size() == 0)//如果集合为空直接结束
+        {
+            return 0;
+        }
+        
+        int n = height.size(); 
+        int left = 0; // 左指针
+        int right = n - 1; // 右指针
+        int maxleft = height[0];
+        int maxright = height[n - 1];
+        int ans = 0;
+        
+        while(left <= right)
+        {
+            maxleft = max(height[left],maxleft); 
+            maxright = max(height[right],maxright);
+            
+            if(maxleft < maxright)
+            {
+                ans += maxleft - height[left]; //左侧高 - 现在高 
+                left++;
+            }
+            else
+            {
+                ans += maxright - height[right];
+                right--;
+            }
+        }
+        return ans;
+        
+    }
+};
