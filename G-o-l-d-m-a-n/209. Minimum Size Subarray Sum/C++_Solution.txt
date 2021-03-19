@@ -1,0 +1,28 @@
+class Solution {
+public:
+    int minSubArrayLen(int target, vector<int>& nums) 
+    {
+        int ans = INT_MAX;
+        int i = 0; //滑窗的右边框
+        int sum = 0; //窗口间的和
+        int begin = 0; //滑窗的左边框
+        while(i < nums.size()) //滑窗的右边框不能超出界限
+        {
+            if(sum + nums[i] < target) //若滑窗之间的和小于s，右边框右移，sum增大
+            {
+                sum += nums[i];
+                ++ i;
+            }
+            else //若滑窗之间的和大于等于s，左边框右移，sum减小
+            {
+                if(i - begin < ans) //若当前符合条件的连续子数组比ans内记录的长度更小，则更新ans值
+                {
+                    ans = i - begin + 1;
+                }
+                sum = sum - nums[begin];
+                ++ begin;
+            }
+        }
+        return ans == INT_MAX? 0:ans;
+    }
+};
