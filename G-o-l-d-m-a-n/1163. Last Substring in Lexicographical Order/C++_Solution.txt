@@ -1,0 +1,21 @@
+class Solution {
+public:
+    string lastSubstring(string s) 
+    {
+        stack<string_view> substrs;
+        string_view str(s);
+        string_view result=str;
+        for(auto i=str.begin()+1;i!=str.end();i++)
+        {
+            if(*i<=*(i-1))
+            {
+                continue;
+            }
+            if(lexicographical_compare(result.begin(),result.end(),i,str.end()))
+            {
+                result=str.substr(i-str.begin());
+            }
+        }
+        return (string)result;
+    }
+};
