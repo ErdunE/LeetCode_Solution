@@ -1,0 +1,16 @@
+class Solution {
+public:
+    int firstUniqChar(string s) 
+    {
+        for(int i=0 ; i<s.size() ; i++)
+        {
+            //如果该字符第一次出现的位置和最后一次出现的位置一样，就证明不重复
+            //返回该数字的位置
+            if(s.find(s[i]) == s.rfind(s[i]))
+            {
+                return i;
+            }
+        }
+        return -1;
+    }
+};
