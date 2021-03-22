@@ -1,0 +1,53 @@
+class Solution 
+{
+public:
+    vector<string> removeComments(vector<string>& source) 
+    {
+        // 当前为/*，找到下一个*/后继续走for循环，注意此处应continue：block的结束不代表当前行的结束！
+        // 当前为//，i++至当前字符为换行符，将buffer加入res集合，清空buffer；
+        //当前为\n，若buffer不为空，写入res后清空buffer；
+        //其他，当前字符写入buffer，继续循环。
+        vector<string> res;
+        string buf;
+        string s;
+        for(string ss : source) 
+        {
+            s += ss + '\n';
+        }
+
+        for(int i = 0; i < s.size(); i++)
+        {
+            if(s[i] == '/' && i+1 < s.size() && s[i+1] == '*')
+            {
+                i += 3;
+                while(!(s[i-1] == '*' && s[i] == '/'))
+                {
+                    i++;
+                }
+                continue;
+            }
+
+            if(s[i] == '/' && i+1 < s.size() && s[i+1] == '/')
+            {
+                i += 2;
+                while(i < s.size() && s[i] != '\n')
+                {
+                    i++;
+                }
+            }
+            if(s[i] == '\n')
+            {
+                if(buf != "")
+                {
+                    res.push_back(buf);
+                }
+                buf = "";
+            }
+            else
+            {
+                buf += s[i];
+            }
+        }
+    return res;
+    }
+};
