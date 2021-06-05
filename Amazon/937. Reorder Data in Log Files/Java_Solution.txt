@@ -1,0 +1,44 @@
+class Solution {
+    public String[] reorderLogFiles(String[] logs) {
+        // 给定一串日志logs
+        // 重新定义logs a1 3 8 9 4 这类，除了开头标志a1外，仅由数字组成的，叫dight-logs
+        // 重新定义logs a1 art can 这类，除了开头标志a1外，仅由字母组成的，叫letter-logs
+        // 排序规则：所有letter-logs在dight-logs前面
+        // 排序规则：所有letter-logs 在内容不同时，忽略标记符后，按字母顺序排序；在内容相同时，按标记符排序
+        // 排序规则：按原来的顺序排列
+        
+        
+        Arrays.sort(logs,(a,b) -> {
+            // 分割字符串，split(String regex, int limit)，limit表示分割的份数。
+            String[] splitA = a.split(" ",2);
+            String[] splitB = b.split(" ",2);
+            // 判断日志类型
+            Boolean aIsDight = Character.isDigit(splitA[1].charAt(0));
+            Boolean bIsDight = Character.isDigit(splitB[1].charAt(0));
+            // a和b都是字母日志
+            if(!aIsDight && !bIsDight){
+                // 在内容不同时，忽略标识符，按内容字母顺序排序；
+                if(!splitA[1].equals(splitB[1])){
+                    return splitA[1].compareTo(splitB[1]);
+                // 在内容相同时，按标识符排序。
+                }else{
+                    return splitA[0].compareTo(splitB[0]);
+                }
+            // a和b都是数字日志
+            }else if(aIsDight && bIsDight){
+                // 保留原来的相对顺序。
+                return 0;
+            // a是字母日志
+            }else if(!aIsDight){
+                // 所有字母日志都排在数字日志之前。
+                return -1;
+            // b是字母日志
+            }else{
+                // 所有字母日志都排在数字日志之前。
+                return 1;
+            }
+        });
+        
+        return logs;
+    }
+}
