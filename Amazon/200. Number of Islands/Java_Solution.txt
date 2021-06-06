@@ -1,0 +1,37 @@
+class Solution {
+    void dfs(char[][] grid, int row, int col){
+      int nRow = grid.length; // 行的长度
+      int nCol = grid[0].length; // 列的长度
+
+      // 边界判定
+      if(row < 0 || col < 0 || row >= nRow || col >= nCol || grid[row][col] == '0'){
+        return;
+      }
+
+      grid[row][col] = '0'; // 重新标记为0
+      dfs(grid, row-1, col); // 左侧
+      dfs(grid, row+1, col); // 右侧
+      dfs(grid, row, col-1); // 上方
+      dfs(grid, row, col+1); // 下方
+    }
+    public int numIslands(char[][] grid) {
+        // 特判
+      if(grid == null || grid.length == 0){
+        return 0;
+      }
+
+      int nRow = grid.length; // 行的长度
+      int nCol = grid[0].length; // 列的长度
+      int result = 0;
+      for(int row = 0 ; row < nRow ; row++){
+        for(int col = 0; col < nCol ; col++){
+          // 如果一个位置为1，则以该点为起始节点，进行深度优先搜索DFS
+          if(grid[row][col] == '1'){
+            result++; // 每进行一次DFS result++
+            dfs(grid,row,col);
+          }
+        }
+      }
+      return result;
+    }
+}
