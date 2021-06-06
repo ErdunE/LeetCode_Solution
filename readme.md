@@ -6,43 +6,41 @@
 
 
 
-| 题号 | 难度 | 题目名称                                                     |                             C++                              | Java |                            Python                            |
-| ---- | ---- | ------------------------------------------------------------ | :----------------------------------------------------------: | :--: | :----------------------------------------------------------: |
-| 11   | 中等 | [盛最多水的容器/Container With Most Water](https://github.com/ErdunE/LeetCode_Solution/tree/master/Array/11.%20Container%20With%20Most%20Water) | [✅](https://github.com/ErdunE/LeetCode_Solution/blob/master/Array/11.%20Container%20With%20Most%20Water/C%2B%2B_Solution.txt) |      | [✅](https://github.com/ErdunE/LeetCode_Solution/blob/master/Array/11.%20Container%20With%20Most%20Water/Python3_Solution.txt) |
-| 26   | 简单 | [删除排序数组中重复项/Remove Duplicates from Sorted Array]() |                                                              |      | [✅](https://github.com/ErdunE/LeetCode_Solution/blob/master/Array/26.%20Remove%20Duplicates%20from%20Sorted%20Array/Python3_Solution.txt) |
-| 66   | 简单 | [加一/Plus One](https://github.com/ErdunE/LeetCode_Solution/tree/master/Array/66.%20Plus%20One) | [✅](https://github.com/ErdunE/LeetCode_Solution/blob/master/Array/66.%20Plus%20One/C%2B%2B_Solution.txt) |      | [✅](https://github.com/ErdunE/LeetCode_Solution/blob/master/Array/66.%20Plus%20One/Python3_Solution.txt) |
-| 70   | 简单 | [爬楼梯Climbing Stairs](https://github.com/ErdunE/LeetCode_Solution/tree/master/Array/70.%20Climbing%20Stairs) | [✅](https://github.com/ErdunE/LeetCode_Solution/blob/master/Array/70.%20Climbing%20Stairs/C%2B%2B_Solution.txt) |      | [✅](https://github.com/ErdunE/LeetCode_Solution/blob/master/Array/70.%20Climbing%20Stairs/Python3_Solution.txt) |
-| 88   | 简单 | [合并两个有序数组/Merge Sorted Array](https://github.com/ErdunE/LeetCode_Solution/tree/master/Array/88.%20Merge%20Sorted%20Array) | [✅](https://github.com/ErdunE/LeetCode_Solution/blob/master/Array/88.%20Merge%20Sorted%20Array/C%2B%2B_Solution.txt) |      |                                                              |
-| 189  | 简单 | [旋转数组/Rotate Array](https://github.com/ErdunE/LeetCode_Solution/tree/master/Array/189.%20Rotate%20Array) | [✅](https://github.com/ErdunE/LeetCode_Solution/blob/master/Array/189.%20Rotate%20Array/C%2B%2B_Solution.txt) |      |                                                              |
-| 283  | 简单 | [移动零/Move Zeros](https://github.com/ErdunE/LeetCode_Solution/tree/master/Array/283.%20Move%20Zeroes) | [✅](https://github.com/ErdunE/LeetCode_Solution/blob/master/Array/283.%20Move%20Zeroes/C%2B%2B_Solution.txt) |      |                                                              |
+| 题号                                                         | 难度 | 题目名称                                                     |                             C++                              |                             Java                             |                            Python                            |
+| :----------------------------------------------------------- | :--- | :----------------------------------------------------------- | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
+| 11                                                           | 中等 | [盛最多水的容器/Container With Most Water](https://github.com/ErdunE/LeetCode_Solution/tree/master/Array/11.%20Container%20With%20Most%20Water) | [✅](https://github.com/ErdunE/LeetCode_Solution/blob/master/Array/11.%20Container%20With%20Most%20Water/C%2B%2B_Solution.txt) |                                                              | [✅](https://github.com/ErdunE/LeetCode_Solution/blob/master/Array/11.%20Container%20With%20Most%20Water/Python3_Solution.txt) |
+| 26                                                           | 简单 | [删除排序数组中重复项/Remove Duplicates from Sorted Array]() |                                                              |                                                              | [✅](https://github.com/ErdunE/LeetCode_Solution/blob/master/Array/26.%20Remove%20Duplicates%20from%20Sorted%20Array/Python3_Solution.txt) |
+| [56](https://leetcode-cn.com/problems/merge-intervals/)      | 中等 | [合并区间/Merge Intervals](https://github.com/ErdunE/LeetCode_Solution/tree/master/Array/56.%20Merge%20Intervals) |                                                              | [✅](https://github.com/ErdunE/LeetCode_Solution/blob/master/Array/56.%20Merge%20Intervals/Java_Solution.txt) |                                                              |
+| 66                                                           | 简单 | [加一/Plus One](https://github.com/ErdunE/LeetCode_Solution/tree/master/Array/66.%20Plus%20One) | [✅](https://github.com/ErdunE/LeetCode_Solution/blob/master/Array/66.%20Plus%20One/C%2B%2B_Solution.txt) |                                                              | [✅](https://github.com/ErdunE/LeetCode_Solution/blob/master/Array/66.%20Plus%20One/Python3_Solution.txt) |
+| 70                                                           | 简单 | [爬楼梯Climbing Stairs](https://github.com/ErdunE/LeetCode_Solution/tree/master/Array/70.%20Climbing%20Stairs) | [✅](https://github.com/ErdunE/LeetCode_Solution/blob/master/Array/70.%20Climbing%20Stairs/C%2B%2B_Solution.txt) |                                                              | [✅](https://github.com/ErdunE/LeetCode_Solution/blob/master/Array/70.%20Climbing%20Stairs/Python3_Solution.txt) |
+| 88                                                           | 简单 | [合并两个有序数组/Merge Sorted Array](https://github.com/ErdunE/LeetCode_Solution/tree/master/Array/88.%20Merge%20Sorted%20Array) | [✅](https://github.com/ErdunE/LeetCode_Solution/blob/master/Array/88.%20Merge%20Sorted%20Array/C%2B%2B_Solution.txt) |                                                              |                                                              |
+| [118](https://leetcode-cn.com/problems/pascals-triangle/)    | 简单 | [杨辉三角/Pascal's Triangle](https://github.com/ErdunE/LeetCode_Solution/tree/master/Array/118.%20Pascal's%20Triangle) | [✅](https://github.com/ErdunE/LeetCode_Solution/blob/master/Array/118.%20Pascal's%20Triangle/C%2B%2B_Solution.txt) |                                                              |                                                              |
+| [119](https://leetcode-cn.com/problems/pascals-triangle-ii/) | 简单 | [杨辉三角 II/Pascal's Triangle II](https://github.com/ErdunE/LeetCode_Solution/tree/master/Array/119.%20Pascal's%20Triangle%20II) | [✅](https://github.com/ErdunE/LeetCode_Solution/blob/master/Array/119.%20Pascal's%20Triangle%20II/C%2B%2B_Solution.txt) |                                                              |                                                              |
+| 189                                                          | 简单 | [旋转数组/Rotate Array](https://github.com/ErdunE/LeetCode_Solution/tree/master/Array/189.%20Rotate%20Array) | [✅](https://github.com/ErdunE/LeetCode_Solution/blob/master/Array/189.%20Rotate%20Array/C%2B%2B_Solution.txt) |                                                              |                                                              |
+| [238](https://leetcode-cn.com/problems/product-of-array-except-self/) | 中等 | [除自身以外数组的乘积/Product of Array Except Self](https://leetcode-cn.com/problems/product-of-array-except-self/) |                                                              | [✅](https://github.com/ErdunE/LeetCode_Solution/blob/master/Array/238.%20Product%20of%20Array%20Except%20Self/Java_Solution.txt) |                                                              |
+| 283                                                          | 简单 | [移动零/Move Zeros](https://github.com/ErdunE/LeetCode_Solution/tree/master/Array/283.%20Move%20Zeroes) | [✅](https://github.com/ErdunE/LeetCode_Solution/blob/master/Array/283.%20Move%20Zeroes/C%2B%2B_Solution.txt) |                                                              |                                                              |
+| [380](https://leetcode-cn.com/problems/insert-delete-getrandom-o1/) | 中等 | [O(1)时间插入，删除和获取随机元素/Insert Delete GetRandom O(1)](https://github.com/ErdunE/LeetCode_Solution/tree/master/Array/380.%20Insert%20Delete%20GetRandom%20O(1)) |                                                              | [✅](https://github.com/ErdunE/LeetCode_Solution/blob/master/Array/380.%20Insert%20Delete%20GetRandom%20O(1)/Java_Solution.txt) |                                                              |
 
+---
 
+### **实战题目 - Linked List**
 
+[✅]()
 
+| 题号                                                   | 难度 | 题目名称                                                     |                             C++                              |                             Java                             | Python |
+| ------------------------------------------------------ | ---- | ------------------------------------------------------------ | :----------------------------------------------------------: | :----------------------------------------------------------: | :----: |
+| [2](https://leetcode-cn.com/problems/add-two-numbers/) | 中等 | [两数相加/Add Two Numbers](https://github.com/ErdunE/LeetCode_Solution/tree/master/Linked%20List/2.%20Add%20Two%20Numbers) | [✅](https://github.com/ErdunE/LeetCode_Solution/blob/master/Linked%20List/2.%20Add%20Two%20Numbers/C%2B%2B_Solution.txt) |                                                              |        |
+| 21                                                     | 中等 | [合并两个有序链表/Merge Two Sorted Lists](https://github.com/ErdunE/LeetCode_Solution/tree/master/Linked%20List/21.%20Merge%20Two%20Sorted%20Lists) | [✅](https://github.com/ErdunE/LeetCode_Solution/blob/master/Linked%20List/21.%20Merge%20Two%20Sorted%20Lists/C%2B%2B_Solution.txt) | [✅](https://github.com/ErdunE/LeetCode_Solution/blob/master/Linked%20List/21.%20Merge%20Two%20Sorted%20Lists/Java_Solution.txt) |        |
+| 24                                                     | 中等 | [两两交换链表中的节点/Swap Nodes in Pairs](https://github.com/ErdunE/LeetCode_Solution/tree/master/Linked%20List/24.%20Swap%20Nodes%20in%20Pairs) | [✅](https://github.com/ErdunE/LeetCode_Solution/blob/master/Linked%20List/24.%20Swap%20Nodes%20in%20Pairs/C%2B%2B_Solution.txt) |                                                              |        |
+| 25                                                     | 困难 | K [个一组翻转链表/Reverse Nodes in k-Group](https://github.com/ErdunE/LeetCode_Solution/tree/master/Linked%20List/25.%20Reverse%20Nodes%20in%20k-Group) | [✅](https://github.com/ErdunE/LeetCode_Solution/blob/master/Linked%20List/25.%20Reverse%20Nodes%20in%20k-Group/C%2B%2B_Solution.txt) |                                                              |        |
+| 141                                                    | 简单 | [环形链表/Linked List Cycle](https://github.com/ErdunE/LeetCode_Solution/tree/master/Linked%20List/141.%20Linked%20List%20Cycle) | [✅](https://github.com/ErdunE/LeetCode_Solution/blob/master/Linked%20List/141.%20Linked%20List%20Cycle/C%2B%2B_Solution.txt) |                                                              |        |
+| 142                                                    | 中等 | [环形链表 II/Linked List Cycle II](https://github.com/ErdunE/LeetCode_Solution/tree/master/Linked%20List/142.%20Linked%20List%20Cycle%20II) | [✅](https://github.com/ErdunE/LeetCode_Solution/blob/master/Linked%20List/142.%20Linked%20List%20Cycle%20II/C%2B%2B_Solution.txt) |                                                              |        |
+| 206                                                    | 简单 | [反转链表/Reverse Linked List](https://github.com/ErdunE/LeetCode_Solution/tree/master/Linked%20List/206.%20Reverse%20Linked%20List) | [✅](https://github.com/ErdunE/LeetCode_Solution/blob/master/Linked%20List/206.%20Reverse%20Linked%20List/C%2B%2B_Solution.txt) |                                                              |        |
 
-实战题目 - Linked List
-题号 	难度 	题目名称            	            	
-21	中等	合并两个有序链表 	
-24	中等	两两交换链表中的节点	
-25	困难	K 个一组翻转链表	
-141	简单	环形链表	
-142	中等	环形链表II	
-206	简单	反转链表	
+---
 
-其他实战题目
-题号 	难度 	题目名称            	            	
-1	简单	两数之和
-15	中等	三数之和	
-20	简单	有效的括号
-42	困难	接雨水		
-49	中等	字母异位词分组		
-84	困难	柱状图中最大的矩形  		
-155	简单	最小栈		
-239	困难	滑动窗口最大值		
-242	简单	有效的字母异位词		
-641	中等	设计循环双端队列		
+### **实战题目 - Binary Tree**
 
-实战题目 - Binary Tree
 题号 	难度 	题目名称            	            	
 22	中等	括号生成		
 94	中等	二叉树的中序遍历		
@@ -151,3 +149,16 @@
 130	中等	被围绕的区域		
 200	中等	岛屿数量		
 547	中等	朋友圈		
+
+其他实战题目
+题号 	难度 	题目名称            	            	
+1	简单	两数之和
+15	中等	三数之和	
+20	简单	有效的括号
+42	困难	接雨水		
+49	中等	字母异位词分组		
+84	困难	柱状图中最大的矩形  		
+155	简单	最小栈		
+239	困难	滑动窗口最大值		
+242	简单	有效的字母异位词		
+641	中等	设计循环双端队列	
