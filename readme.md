@@ -4,39 +4,39 @@
 
 1. [ 实战题目 - Array](https://github.com/ErdunE/LeetCode_Solution#%E5%AE%9E%E6%88%98%E9%A2%98%E7%9B%AE---array)
 
-2. [实战题目 - Linked List](# 实战题目 - Linked List)
+2. [实战题目 - Linked List](https://github.com/ErdunE/LeetCode_Solution#%E5%AE%9E%E6%88%98%E9%A2%98%E7%9B%AE---linked-list)
 
-3. [实战题目 - Binary Tree](# 实战题目 - Binary Tree)
+3. [实战题目 - Binary Tree](https://github.com/ErdunE/LeetCode_Solution#%E5%AE%9E%E6%88%98%E9%A2%98%E7%9B%AE---binary-tree)
 
-4. [实战题目 - 分治](# 实战题目 - 分治)
+4. [实战题目 - 分治](https://github.com/ErdunE/LeetCode_Solution#%E5%AE%9E%E6%88%98%E9%A2%98%E7%9B%AE---%E5%88%86%E6%B2%BB)
 
-5. [实战题目 - 遍历和搜索](# 实战题目 - 遍历和搜索)
+5. [实战题目 - 遍历和搜索](https://github.com/ErdunE/LeetCode_Solution#%E5%AE%9E%E6%88%98%E9%A2%98%E7%9B%AE---%E9%81%8D%E5%8E%86%E5%92%8C%E6%90%9C%E7%B4%A2)
 
-6. [实战题目 - 剪枝](# 实战题目 - 剪枝)
+6. [实战题目 - 剪枝](https://github.com/ErdunE/LeetCode_Solution#%E5%AE%9E%E6%88%98%E9%A2%98%E7%9B%AE---%E5%89%AA%E6%9E%9D)
 
-7. [实战题目 - 二分查找](# 实战题目 - 二分查找)
+7. [实战题目 - 二分查找](https://github.com/ErdunE/LeetCode_Solution#%E5%AE%9E%E6%88%98%E9%A2%98%E7%9B%AE---%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE)
 
-8. [实战题目 - 贪心](# 实战题目 - 贪心)
+8. [实战题目 - 贪心](https://github.com/ErdunE/LeetCode_Solution#%E5%AE%9E%E6%88%98%E9%A2%98%E7%9B%AE---%E8%B4%AA%E5%BF%83)
 
-9. [实战题目 - 动态规划](# 实战题目 - 动态规划)
+9. [实战题目 - 动态规划](https://github.com/ErdunE/LeetCode_Solution#%E5%AE%9E%E6%88%98%E9%A2%98%E7%9B%AE---%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92)
 
-10. [实战题目 - trie 树](# 实战题目 - trie 树)
+10. [实战题目 - trie 树](https://github.com/ErdunE/LeetCode_Solution#%E5%AE%9E%E6%88%98%E9%A2%98%E7%9B%AE---trie-%E6%A0%91)
 
-11. [实战题目 - 位运算](# 实战题目 - 位运算)
+11. [实战题目 - 位运算](https://github.com/ErdunE/LeetCode_Solution#%E5%AE%9E%E6%88%98%E9%A2%98%E7%9B%AE---%E4%BD%8D%E8%BF%90%E7%AE%97)
 
-12. [实战题目 - LRU Catch](# 实战题目 - LRU Catch)
+12. [实战题目 - LRU Catch](https://github.com/ErdunE/LeetCode_Solution#%E5%AE%9E%E6%88%98%E9%A2%98%E7%9B%AE---lru-catch)
 
-13. [实战题目 - 并查集](# 实战题目 - 并查集)
+13. [实战题目 - 并查集](https://github.com/ErdunE/LeetCode_Solution#%E5%AE%9E%E6%88%98%E9%A2%98%E7%9B%AE---%E5%B9%B6%E6%9F%A5%E9%9B%86)
 
-14. [其他实战题目](# 其他实战题目)
+14. [其他实战题目](https://github.com/ErdunE/LeetCode_Solution#%E5%85%B6%E4%BB%96%E5%AE%9E%E6%88%98%E9%A2%98%E7%9B%AE)
 
-15. [双指针](# 双指针)
+15. [双指针](https://github.com/ErdunE/LeetCode_Solution#%E5%8F%8C%E6%8C%87%E9%92%88)
 
-16. [公司面试高频 - Akuna](# 公司面试高频 - Akuna)
+16. [公司面试高频 - Akuna](https://github.com/ErdunE/LeetCode_Solution#%E5%85%AC%E5%8F%B8%E9%9D%A2%E8%AF%95%E9%AB%98%E9%A2%91---akuna)
 
-17. [公司面试高频 - Goldman](# 公司面试高频 - Goldman)
+17. [公司面试高频 - Goldman](https://github.com/ErdunE/LeetCode_Solution#%E5%85%AC%E5%8F%B8%E9%9D%A2%E8%AF%95%E9%AB%98%E9%A2%91---goldman)
 
-18. [公司面试高频 - Amazon](# 公司面试高频 - Amazon)
+18. [公司面试高频 - Amazon](https://github.com/ErdunE/LeetCode_Solution#%E5%85%AC%E5%8F%B8%E9%9D%A2%E8%AF%95%E9%AB%98%E9%A2%91---amazon)
 
 
 
