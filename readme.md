@@ -2,7 +2,7 @@
 
 ### 目录
 
-1. [ 实战题目 - Array](# 实战题目 - Array)
+1. [ 实战题目 - Array](https://github.com/ErdunE/LeetCode_Solution#%E5%AE%9E%E6%88%98%E9%A2%98%E7%9B%AE---array)
 
 2. [实战题目 - Linked List](# 实战题目 - Linked List)
 
