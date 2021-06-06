@@ -1,18 +1,24 @@
-## LeetCode_Solution
+## **LeetCode_Solution**
 
 ---
 
-###实战题目 - Array
+### **实战题目 - Array**
+
+
 
 | 题号 | 难度 | 题目名称                                                     |                             C++                              | Java |                            Python                            |
 | ---- | ---- | ------------------------------------------------------------ | :----------------------------------------------------------: | :--: | :----------------------------------------------------------: |
-| 11   | 中等 | [盛最多水的容器/Container With Most Water](https://github.com/ErdunE/LeetCode_Solution/tree/master/Array/11. Container With Most Water)] | [✅](https://github.com/ErdunE/LeetCode_Solution/blob/master/Array/11.%20Container%20With%20Most%20Water/C%2B%2B_Solution.txt) |      | [✅](https://github.com/ErdunE/LeetCode_Solution/blob/master/Array/11.%20Container%20With%20Most%20Water/Python3_Solution.txt) |
-| 26   | 简单 | [删除排序数组中重复项]()                                     |                            [✅]()                             |      |                                                              |
-| 66   | 简单 | [加一]()                                                     |                            [✅]()                             |      |                                                              |
-| 70   | 简单 | [爬楼梯]()                                                   |                            [✅]()                             |      |                                                              |
-| 88   | 简单 | [合并两个有序数组]()                                         |                            [✅]()                             |      |                                                              |
-| 189  | 简单 | [旋转数组]()                                                 |                            [✅]()                             |      |                                                              |
-| 283  | 简单 | [移动零]()                                                   |                            [✅]()                             |      |                                                              |
+| 11   | 中等 | [盛最多水的容器/Container With Most Water](https://github.com/ErdunE/LeetCode_Solution/tree/master/Array/11.%20Container%20With%20Most%20Water) | [✅](https://github.com/ErdunE/LeetCode_Solution/blob/master/Array/11.%20Container%20With%20Most%20Water/C%2B%2B_Solution.txt) |      | [✅](https://github.com/ErdunE/LeetCode_Solution/blob/master/Array/11.%20Container%20With%20Most%20Water/Python3_Solution.txt) |
+| 26   | 简单 | [删除排序数组中重复项/Remove Duplicates from Sorted Array]() |                                                              |      | [✅](https://github.com/ErdunE/LeetCode_Solution/blob/master/Array/26.%20Remove%20Duplicates%20from%20Sorted%20Array/Python3_Solution.txt) |
+| 66   | 简单 | [加一/Plus One](https://github.com/ErdunE/LeetCode_Solution/tree/master/Array/66.%20Plus%20One) | [✅](https://github.com/ErdunE/LeetCode_Solution/blob/master/Array/66.%20Plus%20One/C%2B%2B_Solution.txt) |      | [✅](https://github.com/ErdunE/LeetCode_Solution/blob/master/Array/66.%20Plus%20One/Python3_Solution.txt) |
+| 70   | 简单 | [爬楼梯Climbing Stairs](https://github.com/ErdunE/LeetCode_Solution/tree/master/Array/70.%20Climbing%20Stairs) | [✅](https://github.com/ErdunE/LeetCode_Solution/blob/master/Array/70.%20Climbing%20Stairs/C%2B%2B_Solution.txt) |      | [✅](https://github.com/ErdunE/LeetCode_Solution/blob/master/Array/70.%20Climbing%20Stairs/Python3_Solution.txt) |
+| 88   | 简单 | [合并两个有序数组/Merge Sorted Array](https://github.com/ErdunE/LeetCode_Solution/tree/master/Array/88.%20Merge%20Sorted%20Array) | [✅](https://github.com/ErdunE/LeetCode_Solution/blob/master/Array/88.%20Merge%20Sorted%20Array/C%2B%2B_Solution.txt) |      |                                                              |
+| 189  | 简单 | [旋转数组/Rotate Array](https://github.com/ErdunE/LeetCode_Solution/tree/master/Array/189.%20Rotate%20Array) | [✅](https://github.com/ErdunE/LeetCode_Solution/blob/master/Array/189.%20Rotate%20Array/C%2B%2B_Solution.txt) |      |                                                              |
+| 283  | 简单 | [移动零/Move Zeros](https://github.com/ErdunE/LeetCode_Solution/tree/master/Array/283.%20Move%20Zeroes) | [✅](https://github.com/ErdunE/LeetCode_Solution/blob/master/Array/283.%20Move%20Zeroes/C%2B%2B_Solution.txt) |      |                                                              |
+
+
+
+
 
 实战题目 - Linked List
 题号 	难度 	题目名称            	            	
