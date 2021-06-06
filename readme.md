@@ -1,25 +1,18 @@
-##LeetCode_Solution
+## LeetCode_Solution
+
+---
 
 ###实战题目 - Array
 
-| 题号 | 难度 | 题目名称             | C++  | Java | Python |
-| ---- | ---- | -------------------- | :--: | :--: | :----: |
-| 11   | 中等 | 盛最多水的容器       |  ✅   |      |        |
-| 26   | 简单 | 删除排序数组中重复项 |  ✅   |      |        |
-| 66   | 简单 |                      |  ✅   |      |        |
-| 70   | 简单 |                      |  ✅   |      |        |
-| 88   | 简单 |                      |  ✅   |      |        |
-| 189  | 简单 |                      |  ✅   |      |        |
-| 283  | 简单 |                      |  ✅   |      |        |
-
-
-​				
-
-66	简单	加一
-70	简单	爬楼梯
-88	简单	合并两个有序数组	
-189	简单	旋转数组	
-283	简单	移动零
+| 题号 | 难度 | 题目名称                                                     |                             C++                              | Java |                            Python                            |
+| ---- | ---- | ------------------------------------------------------------ | :----------------------------------------------------------: | :--: | :----------------------------------------------------------: |
+| 11   | 中等 | [盛最多水的容器/Container With Most Water](https://github.com/ErdunE/LeetCode_Solution/tree/master/Array/11. Container With Most Water)] | [✅](https://github.com/ErdunE/LeetCode_Solution/blob/master/Array/11.%20Container%20With%20Most%20Water/C%2B%2B_Solution.txt) |      | [✅](https://github.com/ErdunE/LeetCode_Solution/blob/master/Array/11.%20Container%20With%20Most%20Water/Python3_Solution.txt) |
+| 26   | 简单 | [删除排序数组中重复项]()                                     |                            [✅]()                             |      |                                                              |
+| 66   | 简单 | [加一]()                                                     |                            [✅]()                             |      |                                                              |
+| 70   | 简单 | [爬楼梯]()                                                   |                            [✅]()                             |      |                                                              |
+| 88   | 简单 | [合并两个有序数组]()                                         |                            [✅]()                             |      |                                                              |
+| 189  | 简单 | [旋转数组]()                                                 |                            [✅]()                             |      |                                                              |
+| 283  | 简单 | [移动零]()                                                   |                            [✅]()                             |      |                                                              |
 
 实战题目 - Linked List
 题号 	难度 	题目名称            	            	
