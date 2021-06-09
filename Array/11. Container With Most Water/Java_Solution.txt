@@ -1,0 +1,24 @@
+class Solution {
+    public int maxArea(int[] height) {
+      	// 设置结果变量  
+      	int res = 0; 
+        
+        // 设置左指针
+        int left = 0; 
+        // 设置右指针
+        int right = height.length - 1;
+        
+        while(left < right){
+            // 水槽面积等于 height(left和right中较短的一方) * (right - left 水槽的宽度)
+            res = Math.max(res, (right - left) * Math.min(height[left], height[right]));
+            // 每次选定水槽两板高度较低的一方向中间移动一格，直到左右指针相遇
+            if(height[left] >= height[right]){
+                right--;
+            }else{
+                left++;
+            }
+        }
+        
+        return res;
+    }
+}
