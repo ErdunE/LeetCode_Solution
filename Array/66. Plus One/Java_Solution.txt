@@ -1,0 +1,20 @@
+class Solution {
+    public int[] plusOne(int[] digits) {
+        
+        int len = digits.length;
+        
+        for(int i = len - 1; i >= 0 ; i--){
+            // 末位不进位
+            // 末位进位，但是在中间停止
+            digits[i]++;
+            digits[i] = digits[i] % 10;
+            if(digits[i] != 0){
+                return digits;
+            }
+        }
+        // 末位进位，一直进位到首尾，导致结果多出一位
+        digits = new int[len + 1];
+        digits[0] = 1;
+        return digits;
+    }
+}
