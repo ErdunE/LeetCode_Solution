@@ -1,0 +1,33 @@
+class Solution {
+    public int[][] merge(int[][] intervals) {
+        // 特判
+        if(intervals.length == 0 || intervals == null){
+            return intervals;
+        }
+        
+        // 设置返回变量 数组merged
+        List<int[]> merged = new ArrayList<int[]>();
+        
+        // 将数组排序，按每一个区间的左端点升序进行排序
+        Arrays.sort(intervals, (v1, v2) -> v1[0] - v2[0]);
+        
+        // 将第一个区间加入merged数组中
+        merged.add(intervals[0]);
+        
+        for(int i=1; i<intervals.length ; i++){
+            // 如果当前区间的左端点在数组中merged中的最后一个区间的右端点之后，那么他们不会重合
+            if(merged.get(merged.size()-1)[1] < intervals[i][0]){
+                // 将当前区间加入数组merged的末尾
+                merged.add(intervals[i]);
+            }
+            // 否则，他们重合，我们需要用当前区间的右端点更新数组merged中最后一个区间的右端点
+            else{
+                // 将其更新为 当前区间右端点，和merged中最后一个区间的右端点 中的较大值
+                merged.get(merged.size()-1)[1] = Math.max(merged.get(merged.size()-1)[1], intervals[i][1]);
+            }
+            // 循环上述步骤直到最后一组区间
+        }  
+        // 返回merged
+        return merged.toArray(new int[merged.size()][2]);
+    }
+}
