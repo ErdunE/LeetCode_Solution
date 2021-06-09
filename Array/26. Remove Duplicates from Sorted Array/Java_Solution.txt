@@ -1,0 +1,27 @@
+class Solution {
+    public int removeDuplicates(int[] nums) {
+        // 特判
+        if(nums.length == 0 || nums == null){
+            return 0;
+        }
+        
+        // 定义快慢指针
+        int left = 0;
+        int right = 1;
+        
+        // 循环 比较left和right位置的元素是否相同
+        while(right < nums.length){
+            // 如果不相等，right的元素复制到left+1的位置上，然后left后移一位
+            if(nums[right] != nums[left]){
+                nums[left+1] = nums[right];
+                left++;
+            }
+            // 如果相等，right后移一位
+            else{
+                right++;
+            }
+        }
+        // 返回结果p+1
+        return left+1;
+    }
+}
