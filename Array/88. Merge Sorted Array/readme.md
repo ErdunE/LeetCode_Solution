@@ -1,6 +1,6 @@
 ## 88. Merge Sorted Array
 
-#### 中文题目链接[[88. 合并两个有序数组](https://leetcode-cn.com/problems/merge-sorted-array/)](https://leetcode-cn.com/problems/climbing-stairs/)
+#### 中文题目链接[88. 合并两个有序数组](https://leetcode-cn.com/problems/merge-sorted-array/)
 
 #### 英文题目链接[88. Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/)
 
