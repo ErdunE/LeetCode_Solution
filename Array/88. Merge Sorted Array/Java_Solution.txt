@@ -1,0 +1,27 @@
+class Solution {
+    public void merge(int[] nums1, int m, int[] nums2, int n) {
+        int len1 = m - 1; // 指针1 指向nums1 有效的 的最后一个元素
+        int len2 = n - 1; // 指针2 指向nums2 有效的 的最后一个元素
+        int len = m + n - 1; // 指针3 指向nums1 的最后一个元素
+        
+        while(len2 >= 0){
+            // 如果指针1 小于0 正面nums1里面的值已经全部排好序 将剩下的nums2的值直接放进去就可以
+            if(len1 < 0){
+                while(len2 >= 0){
+                    nums1[len--] = nums2[len2--];
+                }
+                return;
+            }
+            
+            // 将nums1中的值 和 nums2中的值 进行比较
+            // nums1中的值大  插入 nums1 最后位置
+            if(nums1[len1] > nums2[len2]){
+                nums1[len--] = nums1[len1--];
+            }
+            // nums2中的值大  插入 nums1 最后位置
+            else{
+                nums1[len--] = nums2[len2--]; 
+            }
+        }  
+    }
+}
