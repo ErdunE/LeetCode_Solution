@@ -1,0 +1,23 @@
+class Solution {
+    public void rotate(int[] nums, int k) {
+        // 特判，如果k的值大于nums的元素数量
+        k %= nums.length;
+        // 整体旋转
+        reverse(nums, 0, nums.length - 1);
+        // 旋转第一个数到第k个数字
+        reverse(nums, 0, k - 1);
+        // 旋转第k+1个数字到最后
+        reverse(nums, k, nums.length - 1);
+         
+    }
+    // 旋转函数
+    public void reverse(int[] nums, int start, int end){
+        while(start < end){
+            int tmp = nums[start];
+            nums[start] = nums[end];
+            nums[end] = tmp;
+            start += 1;
+            end -= 1;
+        }
+    }
+}
