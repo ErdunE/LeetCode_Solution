@@ -80,11 +80,19 @@ k为非负数
 
 ![image-20210610195400210](https://tva1.sinaimg.cn/large/008i3skNgy1grdzu9sjjej30f201dmx3.jpg)
 
+
+
 ![image-20210610195411513](https://tva1.sinaimg.cn/large/008i3skNgy1grdzugu0xwj30f202tq35.jpg)
+
+
 
 ![image-20210610195422678](https://tva1.sinaimg.cn/large/008i3skNgy1grdzung0e3j30ex06b74w.jpg)
 
+
+
 ![image-20210610195434681](https://tva1.sinaimg.cn/large/008i3skNgy1grdzuv0swpj30ez062wf5.jpg)
+
+
 
 ![image-20210610195445201](https://tva1.sinaimg.cn/large/008i3skNgy1grdzv1ghzaj30ed062wew.jpg)
 
