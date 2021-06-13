@@ -1,0 +1,21 @@
+class Solution {
+    public int[] productExceptSelf(int[] nums) {
+        // 创建一个空数组res用来存储最终结果
+        int[] res = new int[nums.length]; 
+        // 设置两个变量 值为1 运算过程中排除自己
+        int p = 1, q = 1; 
+        
+        // 分别计算矩阵的 `下三角` 和 `上三角`，并且在计算过程中储存过程值
+        for(int i = 0 ; i < nums.length ; i++){
+            res[i] = p;
+            p = nums[i] * p;
+        }
+        
+        for(int i = nums.length - 1 ; i > 0 ; i--){
+            q = nums[i] * q;
+            res[i - 1] = res[i - 1] * q;
+        }
+        
+        return res;
+    }
+}
