@@ -1,0 +1,23 @@
+class Solution {
+    public void moveZeroes(int[] nums) {
+        // 特判
+        if(nums.length == 0){
+            return;
+        }
+                 
+        int left = 0;
+        
+        // 先将所有非0元素依次放到队列前面，left指针记录非0的个数，只要是非0的统统都赋给nums[left]
+        for(int i = 0 ; i < nums.length ; i++){
+            if(nums[i] != 0){
+                nums[left] = nums[i];
+                left++;
+            }
+        }
+        // 所有非0元素统计完了，剩下的就都是0了
+        // 将所有剩余元素赋值为0
+        for(int i = left ; i < nums.length ; i++){
+            nums[i] = 0;
+        }
+    }
+}
