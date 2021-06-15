@@ -1,0 +1,41 @@
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode() {}
+ *     ListNode(int val) { this.val = val; }
+ *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+ * }
+ */
+class Solution {
+    public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
+        // 创建新的链表存储结果
+        ListNode res = new ListNode(-1); 
+        // 创建一个新的指针
+        ListNode point = res;
+        
+        // 当l1和l2都不是空链表时
+        // 判断l1和l2哪一个链表的头节点的值更小
+        // 将较小值的节点添加到结果里
+        // 当一个节点被添加到结果里之后，将对应链表中的节点向后移一位
+        while(l1 != null && l2 != null){
+            if(l1.val <= l2.val){
+                point.next = l1;
+                l1 = l1.next;
+            }
+            else{
+                point.next = l2;
+                l2 = l2.next;
+            }
+            
+            // 合并后 l1 和 l2 最多只有一个还未被合并完，我们直接将链表末尾指向未合并完的链表即可
+            point = point.next;
+        }
+
+                
+        point.next = l1 == null ? l2 : l1;
+        
+        return res.next;
+    }
+}
