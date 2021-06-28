@@ -1,0 +1,42 @@
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode() {}
+ *     TreeNode(int val) { this.val = val; }
+ *     TreeNode(int val, TreeNode left, TreeNode right) {
+ *         this.val = val;
+ *         this.left = left;
+ *         this.right = right;
+ *     }
+ * }
+ */
+class Solution {
+    // 对给定的二叉树中序遍历，结果记录于res之中
+    List<Integer> res = new ArrayList<>();
+    public boolean isValidBST(TreeNode root) {
+        if(root == null){
+            return true;
+        }
+        inOrder(root);
+        // 检验res是否为严格的升序
+        for(int i=1 ; i <res.size() ; i++){
+            if(res.get(i) <= res.get(i-1)){
+                // 反之false
+                return false;
+            }
+        }
+        // 若是则为true
+        return true;   
+    }
+    // 中序遍历。二叉搜索树中序遍历得到升序，
+    private void inOrder(TreeNode root){
+        if(root != null){
+            inOrder(root.left);
+            res.add(root.val);
+            inOrder(root.right);
+        }
+    }
+}
